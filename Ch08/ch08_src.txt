@@ -25,7 +25,7 @@ $ cd whisper.cpp
 $ make
 
 P.24 [Linux Command]
-$ scp ./Downloads/sample-1.mp3 rx74@122.116.228.96:./nfs
+$ wget -O ~/whisper/sample-1.mp3 https://github.com/ai4kids-tw/RPi5_LLM_Tutorial_Src/raw/refs/heads/main/Ch08/sample-1.mp3 
 
 P.25 [Linux Command]
 $ whisper [file path] --model tiny
@@ -33,13 +33,20 @@ $ whisper [file path] --model tiny
 P.25 [Linux Command] Whisper.cpp
 $ ./main -m models/ggml-tiny.bin -f audio.mp3
 
+P.26 [Linux Command]
+$ wget -O ~/whisper/sample-ch.wav https://github.com/ai4kids-tw/RPi5_LLM_Tutorial_Src/raw/refs/heads/main/Ch08/sample-ch.wav
+
+
 P.27 [Linux Command]
+$ wget -O ~/whisper/sample-ch-1.wav https://github.com/ai4kids-tw/RPi5_LLM_Tutorial_Src/raw/refs/heads/main/Ch08/sample-ch-1.wav
 $ whisper [file path]--task translate --model tiny
+
 
 P.28 [Linux Command]
 $ nano transcribe.py
 
 P.29 [Python]
+$ wget -O ~/whisper/audio.mp3 https://github.com/ai4kids-tw/RPi5_LLM_Tutorial_Src/raw/refs/heads/main/Ch08/audio.mp3 
 請參考P29.py
 
 P.30 [Linux Command]
